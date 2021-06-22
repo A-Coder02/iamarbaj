@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredericka+the+Great&family=Frijole&family=Gorditas&family=Great+Vibes&family=Libre+Barcode+39&family=Megrim&family=Monoton&family=Orbitron&family=Pacifico&family=Playfair+Display+SC&family=Press+Start+2P&family=Sacramento&family=Syncopate&family=Tangerine&family=Zen+Dots&display=swap');
+
+a{text-decoration:none;color:black;}
+	*,*:before,*:after{
+		padding:0;
+		margin:0;
+		box-sizing:border-box;
+	}
+	main{text-align:center;display:flex;justify-content:center;}
+.intro {
+    width: 800px;
+    min-width: 400px;
+    height: 500px;
+    min-height: 250px;
+    text-align: center;
+    position: fixed;
+    perspective: 300px;
+     overflow: hidden; 
+     transform: scale(1.5); 
+}
+.wall{
+	background-size:100px 100px;
+	background:red;
+}
+.wall {
+    background-size: 100px 100px;
+    background: linear-gradient(45deg, #453b3b, #a136c2d4);
+}
+.wall-right {
+    width: 40%;
+    height: 100%;
+    transform: rotateY(80deg);
+    /* perspective: 30px; */
+    perspective-origin: center;
+    position: absolute;
+    left: 0rem;
+    top: 2%;
+    /* box-shadow: 0rem 0 2rem black,inset 2rem 0rem 10rem black; */
+    animation-name: wall-right;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1); */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    z-index: 1;
+}
+
+@keyframes wall-right{
+	to{
+		left:56%;
+		 /* box-shadow: 0rem 0 0rem black,inset 0 2rem 11rem black; */
+	}
+}
+
+.wall-right1 {
+    width: 40%;
+    height: 100%;
+    transform: rotateY(80deg);
+    /* perspective: 30px; */
+    perspective-origin: center;
+    position: absolute;
+    left:-7%;
+    top: 2%;
+    /* box-shadow: 0rem 0 2rem black,inset 2rem 0rem 10rem black; */
+    animation-name: wall-right1;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1); */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    z-index: -1;
+}
+
+@keyframes wall-right1{
+	to{
+		left:48%;
+		 /* box-shadow: 0rem 0 0rem black,inset 0 2rem 11rem black; */
+	}
+}
+
+.wall-front {
+    height: 141%;
+    width: 37%;
+    position: absolute;
+    z-index: 2;
+    transform: rotateY(-15deg);
+    /* perspective: 30px; */
+    perspective-origin: center;
+    position: absolute;
+    left: -24rem;
+    top: -155px;
+    /* box-shadow:inset 0 2rem 1rem black; */
+    animation-name: wall-front;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1); */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    z-index: 1;
+    /* display: none; */
+}
+@keyframes wall-front{
+	to{
+		left:77.5%;
+		transform: rotateY(
+14deg
+);width: 28%;
+ /* box-shadow:inset 0 2rem 1rem black; */
+	}
+}
+
+
+
+
+.wall-top {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    transform: rotateX(258deg)rotateY(0deg);
+    /* perspective: 30px; */
+    perspective-origin: center;
+    position: absolute;
+    left: -76%;
+    top: -21%;
+    /* box-shadow: inset 0 2rem 11rem black; */
+    animation-name: wall-top;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1); */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    z-index: 0;
+    /* display: none; */
+}
+@keyframes wall-top{
+	to{
+		left:-28%;
+		
+ /* box-shadow:inset 0 2rem 1rem black; */
+	}
+}
+
+
+.wall-bottom {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    transform: rotateX(258deg)rotateY(0deg);
+    /* perspective: 30px; */
+    perspective-origin: center;
+    position: absolute;
+    left: -76%;
+    bottom: -21%;
+    /* box-shadow: inset 0 2rem 11rem black; */
+    animation-name: wall-bottom;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1); */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    z-index: 0;
+    /* display: none; */
+}
+@keyframes wall-bottom{
+	to{
+		left:-28%;
+		
+ /* box-shadow:inset 0 2rem 1rem black; */
+	}
+}
